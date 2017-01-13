@@ -1,6 +1,6 @@
 {
   "db": {
-    "host": "mongodb://app_usr:u$er123@ds163738.mlab.com:63738/podology_test",
+    "host": "mongodb://127.0.0.1:27017/apipodologia",
     "collections": ["pacientes"]
   },
   "domain": "localhost",
