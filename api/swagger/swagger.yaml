@@ -1,0 +1,79 @@
+swagger: '2.0'
+info:
+  title: YourApp
+  description: 'your App'
+  version: 1.0.0
+host: 'localhost:5000'
+basePath: /service/
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /paciente:
+    put:
+      tags:
+        - paciente
+      summary: Inserta datos del paciente
+      x-swagger-router-controller: paciente.insert
+      parameters:
+        - name: datos
+          in: body
+          required: true
+          schema:
+              $ref: '#/definitions/paciente'
+      responses:
+        '200':
+          description: devuelve las cuentas
+  /server/time:
+    get:
+      tags:
+        - hours
+      summary: the local server time
+      x-swagger-router-controller: server.time
+      responses:
+        '200':
+          description: the local server time answer
+
+  /about:
+    get:
+      tags:
+        - about
+      summary: About this API
+      x-swagger-router-controller: about.about
+      parameters:
+        - name: name
+          in: query
+          required: false
+          type: string
+      responses:
+        '200':
+          description: About
+          schema:
+            $ref: '#/definitions/about'
+
+
+definitions:
+  about:
+    type: object
+    properties:
+      version:
+        type: string
+      name:
+        type: string
+  paciente:
+    type: object
+    properties:
+      dni:
+        type: number
+      nombre:
+        type: string
+      apellido:
+        type: string
+      domicilio:
+        type: string
+      telefono:
+        type: number
+      mail:
+        type: string

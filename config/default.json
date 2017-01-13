@@ -1,0 +1,30 @@
+{
+  "db": {
+    "host": "mongodb://app_usr:u$er123@ds163738.mlab.com:63738/podology_test",
+    "collections": ["pacientes"]
+  },
+  "domain": "localhost",
+  "server": {
+    "dbConnectionRetry": true,
+    "maxConnectionRetryTime": 60,
+    "port": 5000
+  },
+  "app": {
+    "url": "http://127.0.0.1:5000/"
+  },
+  "service": {
+    "protocol": "http://",
+    "host": "localhost:5000",
+    "pathname": "/service"
+  },
+  "redis": {
+    "hosts": [
+      {
+        "host": "127.0.0.1",
+        "port": 6379
+      }
+    ],
+    "mastername": "master"
+  }
+
+}
