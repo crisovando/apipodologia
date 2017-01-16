@@ -35,7 +35,7 @@ function app(config) {
 	self.main = {
 		config: config,
 		db: mongojs(process.env.MONGOLAB_URI || config.get('db.host'), config.get('db.collections')),
-		restEndpoint: config.get('service.protocol') + config.get('service.host') + config.get('service.pathname'),
+		restEndpoint: config.get('service.protocol') + process.env.HOST || config.get('service.host') + config.get('service.pathname'),
 		sockets: {}
 	};
 
@@ -95,7 +95,7 @@ app.prototype.swaggerDoc = function () {
 		var swaggerString = fs.readFileSync(swaggerFile, 'utf8');
 		var swaggerDoc = yaml.safeLoad(swaggerString);
 
-		swaggerDoc.host = self.main.config.get('service.host');
+		swaggerDoc.host = self.main.config.get('service.host') + ':' + process.env.PORT;
 		swaggerDoc.basePath = self.main.config.get('service.pathname');
 
 		self.main.swaggerDoc = swaggerDoc;
