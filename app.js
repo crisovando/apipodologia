@@ -95,7 +95,7 @@ app.prototype.swaggerDoc = function () {
 		var swaggerString = fs.readFileSync(swaggerFile, 'utf8');
 		var swaggerDoc = yaml.safeLoad(swaggerString);
 
-		swaggerDoc.host = self.main.config.get('service.host') + ':' + process.env.PORT;
+		swaggerDoc.host = self.main.config.get('service.host');
 		swaggerDoc.basePath = self.main.config.get('service.pathname');
 
 		self.main.swaggerDoc = swaggerDoc;
