@@ -1,8 +1,8 @@
 {
-  "db": "mongodb://127.0.0.1:27017/apipodologia",
-  "collections": [
-    "pacientes"
-  ],
+  "db": {
+    "host": "mongodb://127.0.0.1:27017/apipodologia",
+    "collections": ["pacientes"]
+  },
   "domain":"apipodologia.herokuapp.com",
   "server": {
     "dbConnectionRetry": true,
