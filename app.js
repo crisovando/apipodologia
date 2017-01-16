@@ -35,7 +35,7 @@ function app(config) {
 	self.main = {
 		config: config,
 		db: mongojs(process.env.MONGOLAB_URI || config.get('db.host'), config.get('db.collections')),
-		restEndpoint: config.get('service.protocol') + process.env.HOST || config.get('service.host') + config.get('service.pathname'),
+		restEndpoint: config.get('service.protocol') + config.get('service.host') + process.env.PORT + config.get('service.pathname'),
 		sockets: {}
 	};
 
