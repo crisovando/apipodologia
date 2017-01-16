@@ -1,0 +1,27 @@
+{
+  "db": "mongodb://127.0.0.1:27017/apipodologia",
+  "collections": [
+    "pacientes"
+  ],
+  "domain":"apipodologia.herokuapp.com",
+  "server": {
+    "dbConnectionRetry": true,
+    "maxConnectionRetryTime": 60,
+    "port": 5000
+  },
+  "app": {
+    "url": "https://apipodologia.herokuapp.com/"
+  },
+  "service": {
+    "protocol": "https://",
+    "host": "apipodologia.herokuapp.com",
+    "pathname": "/service"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379
+  },
+  "logs": {
+    "screenshotFolder": "/dev/shm"
+  }
+}

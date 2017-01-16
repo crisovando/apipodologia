@@ -14,7 +14,7 @@
   },
   "service": {
     "protocol": "http://",
-    "host": "apipodologia.herokuapp.com:",
+    "host": "localhost:5000",
     "pathname": "/service"
   },
   "redis": {
