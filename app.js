@@ -55,9 +55,9 @@ function app(config) {
 			.then(()=> {
 				return self.io();
 			})
-			.then(()=> {
-				return self.redisClient();
-			})
+			// .then(()=> {
+			// 	return self.redisClient();
+			// })
 			.then(()=> {
 				return self.announce();
 			})
