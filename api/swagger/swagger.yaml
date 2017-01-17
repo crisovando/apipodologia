@@ -11,10 +11,18 @@ produces:
   - application/json
 
 paths:
-  /paciente:
-    put:
+  /pacientes:
+    get:
       tags:
         - paciente
+      summary: obtiene todos los pacientes
+      x-swagger-router-controller: paciente.search
+      responses:
+        '200':
+          description: the local server time answer
+    put:
+      tags:
+        - pacientes
       summary: Inserta datos del paciente
       x-swagger-router-controller: paciente.insert
       parameters:

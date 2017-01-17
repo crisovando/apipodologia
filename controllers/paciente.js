@@ -9,7 +9,7 @@ function Paciente(main) {
 	return {
     'insert': (req, res, next)=> {
 			debug(".paciente.insert called");
-      
+
       let parametros = req.swagger.params.datos ? req.swagger.params.datos.value : null;
 
       main.libs.paciente.insert(parametros)
@@ -19,8 +19,20 @@ function Paciente(main) {
 								.catch(err => {
 									return next(err);
 								});
-		}
+		},
+    'search': (req, res, next)=> {
+      debug(".paciente.search called");
 
+      let parametro = req.swagger.params.id ? req.swagger.params.id.value : null;
+
+      main.libs.paciente.insert(parametro)
+                .then(pacientes => {
+                  res.json(pacientes);
+                })
+                .catch(err => {
+                  return next(err);
+                });
+    }
 	};
 }
 
