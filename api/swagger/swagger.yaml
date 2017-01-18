@@ -14,9 +14,9 @@ paths:
   /pacientes:
     get:
       tags:
-        - paciente
+        - pacientes
       summary: obtiene todos los pacientes
-      x-swagger-router-controller: paciente.search
+      x-swagger-router-controller: paciente.find
       responses:
         '200':
           description: the local server time answer

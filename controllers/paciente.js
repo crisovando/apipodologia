@@ -20,12 +20,12 @@ function Paciente(main) {
 									return next(err);
 								});
 		},
-    'search': (req, res, next)=> {
-      debug(".paciente.search called");
+    'find': (req, res, next)=> {
+      debug(".paciente.find called");
 
       let parametro = req.swagger.params.id ? req.swagger.params.id.value : null;
 
-      main.libs.paciente.insert(parametro)
+      main.libs.paciente.find(parametro)
                 .then(pacientes => {
                   res.json(pacientes);
                 })
