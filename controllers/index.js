@@ -81,7 +81,7 @@ function makeControllers(main) {
 
 	return wrapControllers({
 		'server.time_get': controllers.server.time,
-    'paciente.insert_put': controllers.paciente.insert,
+    'paciente.insert_post': controllers.paciente.insert,
 		'paciente.find_get': controllers.paciente.find
 	}, main.announce);
 }

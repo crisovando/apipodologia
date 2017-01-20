@@ -14,15 +14,28 @@ paths:
   /pacientes:
     get:
       tags:
-        - pacientes
+        - Pacientes
       summary: obtiene todos los pacientes
       x-swagger-router-controller: paciente.find
+      parameters:
+        - name: nombre
+          in: query
+          required: false
+          type: string
+        - name: apellido
+          in: query
+          required: false
+          type: string
+        - name: telefono
+          in: query
+          required: false
+          type: number
       responses:
         '200':
-          description: the local server time answer
-    put:
+          description: Devuelve lista de pacientes
+    post:
       tags:
-        - pacientes
+        - Pacientes
       summary: Inserta datos del paciente
       x-swagger-router-controller: paciente.insert
       parameters:
@@ -32,8 +45,25 @@ paths:
           schema:
               $ref: '#/definitions/paciente'
       responses:
-        '200':
+        '201':
           description: devuelve las cuentas
+  /pacientes/{id}:
+    get:
+      tags:
+        - Pacientes
+      summary: Obtiene el paciente por su id
+      x-swagger-router-controller: paciente.find
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: id del paciente
+          required: true
+      responses:
+        '200':
+          description:
+            Devuelve paciente
+
   /server/time:
     get:
       tags:

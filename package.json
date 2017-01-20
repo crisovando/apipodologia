@@ -4,7 +4,7 @@
   "description": "api que maneja la logica de los pacientes",
   "main": "app.js",
   "scripts": {
-    "start": "node bin/www",
+    "start": "nodemon bin/www",
     "debug": "DEBUG=* node bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,7 @@
     "helmet": "^3.0.0",
     "moment": "^2.15.2",
     "mongojs": "^2.4.0",
+    "nodemon": "^1.11.0",
     "redis-sentinel": "^0.3.3",
     "socket.io": "^1.5.1",
     "swagger-tools": "^0.10.1"
