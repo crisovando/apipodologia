@@ -22,13 +22,13 @@ function Paciente(main) {
 		},
     'find': (req, res, next)=> {
       debug(".paciente.find called");
-      
-      let dni = req.swagger.params.id ? req.swagger.params.id.value : null;
-      let nombre = req.swagger.params.nombre ? req.swagger.params.nombre.value : null;
-      let apelido = req.swagger.params.apelido ? req.swagger.params.apelido.value : null;
-      let telefono = req.swagger.params.apelido ? req.swagger.params.apelido.value : null;
 
-      main.libs.paciente.find(dni)
+      let parametro = req.swagger.params.id ? req.swagger.params.id.value : null;
+			let dni = req.swagger.params.dni ? req.swagger.params.dni.value : null;
+			let nombre = req.swagger.params.nombre ? req.swagger.params.nombre.value : null;
+			let apellido = req.swagger.params.apellido ? req.swagger.params.apellido.value : null;
+			
+      main.libs.paciente.find(parametro,{dni: dni, nombre: nombre, apellido: apellido})
                 .then(pacientes => {
                   res.json(pacientes);
                 })
