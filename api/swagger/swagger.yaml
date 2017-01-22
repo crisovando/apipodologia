@@ -11,10 +11,34 @@ produces:
   - application/json
 
 paths:
-  /paciente:
-    put:
+  /pacientes:
+    get:
       tags:
-        - paciente
+        - Pacientes
+      summary: obtiene todos los pacientes
+      x-swagger-router-controller: paciente.find
+      parameters:
+        - name: nombre
+          in: query
+          description: Nombre del paciente
+          required: false
+          type: string
+        - name: apellido
+          in: query
+          required: false
+          description: Apellido del paciente
+          type: string
+        - name: dni
+          in: query
+          description: dni del paciente
+          required: false
+          type: number
+      responses:
+        '200':
+          description: Devuelve lista de pacientes
+    post:
+      tags:
+        - Pacientes
       summary: Inserta datos del paciente
       x-swagger-router-controller: paciente.insert
       parameters:
@@ -24,8 +48,25 @@ paths:
           schema:
               $ref: '#/definitions/paciente'
       responses:
-        '200':
+        '201':
           description: devuelve las cuentas
+  /pacientes/{id}:
+    get:
+      tags:
+        - Pacientes
+      summary: Obtiene el paciente por su id
+      x-swagger-router-controller: paciente.find
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: id del paciente
+          required: true
+      responses:
+        '200':
+          description:
+            Devuelve paciente
+
   /server/time:
     get:
       tags:
