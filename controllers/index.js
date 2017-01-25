@@ -75,14 +75,16 @@ function makeControllers(main) {
 
 	let controllers = {
 		'server': require('./server')(main),
-    'paciente': require('./paciente')(main)
+    'paciente': require('./paciente')(main),
+		'paciente_historial': require('./paciente/historial')(main)
 	};
 
 
 	return wrapControllers({
 		'server.time_get': controllers.server.time,
     'paciente.insert_post': controllers.paciente.insert,
-		'paciente.find_get': controllers.paciente.find
+		'paciente.find_get': controllers.paciente.find,
+		'paciente.historial.insert_post': controllers.paciente_historial.insert
 	}, main.announce);
 }
 

@@ -1,0 +1,27 @@
+/* eslint-disable semi */
+"use strict";
+
+const debug = require('debug')("restful:controllers:paciente.historial");
+
+function Historial(main) {
+	debug("init...");
+
+	return {
+    'insert': (req, res, next)=> {
+			debug(".paciente.historial.insert called");
+
+      let id = req.swagger.params.id ? req.swagger.params.id.value : null;
+      let parametros = req.swagger.params.datos ? req.swagger.params.datos.value : null;
+
+      main.libs.paciente_historial.insert(id,parametros)
+								.then(historial => {
+									res.json(historial);
+								})
+								.catch(err => {
+									return next(err);
+								});
+		}
+	};
+}
+
+module.exports = Historial;
