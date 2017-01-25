@@ -20,14 +20,17 @@ paths:
       parameters:
         - name: nombre
           in: query
+          description: Nombre del paciente
           required: false
           type: string
         - name: apellido
           in: query
           required: false
+          description: Apellido del paciente
           type: string
-        - name: telefono
+        - name: dni
           in: query
+          description: dni del paciente
           required: false
           type: number
       responses:
