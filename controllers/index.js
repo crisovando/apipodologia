@@ -84,7 +84,8 @@ function makeControllers(main) {
 		'server.time_get': controllers.server.time,
     'paciente.insert_post': controllers.paciente.insert,
 		'paciente.find_get': controllers.paciente.find,
-		'paciente.historial.insert_post': controllers.paciente_historial.insert
+		'paciente.historial.insert_post': controllers.paciente_historial.insert,
+		'paciente.historial.find_get': controllers.paciente_historial.find
 	}, main.announce);
 }
 
