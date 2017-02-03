@@ -23,6 +23,24 @@ paths:
           required: true
           schema:
               $ref: '#/definitions/paciente'
+    patch:
+      tags:
+         - currency
+     summary: Realiza un Update
+     x-swagger-router-controller: paciente.update
+     parameters:
+       - name: datos
+         in: body
+         required: true
+         schema:
+           $ref: '#/definitions/paciente'
+
+     responses:
+       '200':
+         description: Currency
+         schema:
+           $ref: '#/definitions/currency'
+
       responses:
         '200':
           description: devuelve las cuentas

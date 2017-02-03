@@ -19,8 +19,18 @@ function Paciente(main) {
 								.catch(err => {
 									return next(err);
 								});
-		}
+		},
+	'update':(req,res,next)=>{
+		let params = req.swagger.params.datos ? req.swagger.params.datos.value : null;
 
+		main.libs.paciente.update(params)
+			.then(busqueda =>{
+				res.json(busqueda);
+			})
+			.catch(err => {
+				 next(err);
+			});
+	}
 	};
 }
 
