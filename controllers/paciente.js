@@ -9,7 +9,7 @@ function Paciente(main) {
 	return {
     'insert': (req, res, next)=> {
 			debug(".paciente.insert called");
-      
+
       let parametros = req.swagger.params.datos ? req.swagger.params.datos.value : null;
 
       main.libs.paciente.insert(parametros)
@@ -20,6 +20,7 @@ function Paciente(main) {
 									return next(err);
 								});
 		},
+<<<<<<< HEAD
 	'update':(req,res,next)=>{
 		let params = req.swagger.params.id ? req.swagger.params.id.value : null;
 
@@ -31,6 +32,24 @@ function Paciente(main) {
 				 next(err);
 			});
 	}
+=======
+    'find': (req, res, next)=> {
+      debug(".paciente.find called");
+
+      let parametro = req.swagger.params.id ? req.swagger.params.id.value : null;
+			let dni = req.swagger.params.dni ? req.swagger.params.dni.value : null;
+			let nombre = req.swagger.params.nombre ? req.swagger.params.nombre.value : null;
+			let apellido = req.swagger.params.apellido ? req.swagger.params.apellido.value : null;
+			
+      main.libs.paciente.find(parametro,{dni: dni, nombre: nombre, apellido: apellido})
+                .then(pacientes => {
+                  res.json(pacientes);
+                })
+                .catch(err => {
+                  return next(err);
+                });
+    }
+>>>>>>> a2da2e23e5e079a8bb94de2b2b0b7741825b5dba
 	};
 }
 

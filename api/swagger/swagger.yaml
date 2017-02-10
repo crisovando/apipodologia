@@ -1,20 +1,44 @@
 swagger: '2.0'
 info:
-  title: YourApp
-  description: 'your App'
+  title: Api podologia
+  description: 'Api que almacena y controla los datos de los pacientes'
   version: 1.0.0
 host: 'localhost:5000'
-basePath: /service/
+basePath: /v1/
 consumes:
   - application/json
 produces:
   - application/json
 
 paths:
-  /paciente:
-    put:
+  /pacientes:
+    get:
       tags:
-        - paciente
+        - Pacientes
+      summary: obtiene todos los pacientes
+      x-swagger-router-controller: paciente.find
+      parameters:
+        - name: nombre
+          in: query
+          description: Nombre del paciente
+          required: false
+          type: string
+        - name: apellido
+          in: query
+          required: false
+          description: Apellido del paciente
+          type: string
+        - name: dni
+          in: query
+          description: dni del paciente
+          required: false
+          type: number
+      responses:
+        '200':
+          description: Devuelve lista de pacientes
+    post:
+      tags:
+        - Pacientes
       summary: Inserta datos del paciente
       x-swagger-router-controller: paciente.insert
       parameters:
@@ -22,10 +46,11 @@ paths:
           in: body
           required: true
           schema:
-              $ref: '#/definitions/paciente'
+              $ref: '#/definitions/Paciente'
       responses:
-        '200':
+        '201':
           description: devuelve las cuentas
+<<<<<<< HEAD
 
   /paciente/{id}:
     patch:
@@ -41,16 +66,61 @@ paths:
       responses:
         '200':
           description: Paciente
+=======
+  /pacientes/{id}:
+    get:
+      tags:
+        - Pacientes
+      summary: Obtiene el paciente por su id
+      x-swagger-router-controller: paciente.find
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: id del paciente
+          required: true
+      responses:
+        '200':
+          description:
+            Devuelve paciente
+  /pacientes/{id}/historial:
+    post:
+      tags:
+        - Pacientes
+      summary: Inserta datos del historial del paciente
+      x-swagger-router-controller: paciente.historial.insert
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: id del paciente
+          required: true
+        - name: datos
+          in: body
+          required: true
+          schema:
+              $ref: '#/definitions/Historial'
+      responses:
+        '201':
+          description: devuelve las cuentas
+    get:
+      tags:
+        - Pacientes
+      summary: Obtiene el historial del paciente
+      x-swagger-router-controller: paciente.historial.find
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: id del paciente
+          required: true
+      responses:
+        '200':
+          description: devuelve el historial del paciente
+>>>>>>> a2da2e23e5e079a8bb94de2b2b0b7741825b5dba
 
 definitions:
-  about:
-    type: object
-    properties:
-      version:
-        type: string
-      name:
-        type: string
-  paciente:
+  Paciente:
     type: object
     properties:
       dni:
@@ -64,4 +134,11 @@ definitions:
       telefono:
         type: number
       mail:
+        type: string
+  Historial:
+    type: object
+    properties:
+      descripcion:
+        type: string
+      observacion:
         type: string
