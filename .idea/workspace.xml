@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8652ed3-9532-40a6-ae58-bc8588a7d1eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/swagger/swagger.yaml" afterPath="$PROJECT_DIR$/api/swagger/swagger.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/paciente.js" afterPath="$PROJECT_DIR$/controllers/paciente.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/paciente.js" afterPath="$PROJECT_DIR$/lib/paciente.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,30 +28,32 @@
       <file leaf-file-name="paciente.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/paciente.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="378">
+              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swagger.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="swagger.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/swagger/swagger.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state relative-caret-position="547">
+              <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
               <folding>
-                <element signature="e#211#562#1" expanded="false" />
+                <element signature="e#1931#2847#0" expanded="false" />
+                <element signature="e#1962#2465#0" expanded="false" />
+                <element signature="e#2470#2847#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -71,8 +72,8 @@
       <file leaf-file-name="paciente.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/paciente.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="-445">
+              <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -81,10 +82,61 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3774">
-              <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+            <state relative-caret-position="3757">
+              <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1486759913935" expanded="true" signature="845:1797" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="901:1143" ph="{&quot;config&quot;: config...}" />
+                <marker date="1486759913935" expanded="true" signature="1148:1201" ph="/*...*/" />
+                <marker date="1486759913935" expanded="true" signature="1269:1793" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1306:1338" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1354:1382" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1387:1445" ph="//..." />
+                <marker date="1486759913935" expanded="true" signature="1460:1494" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1510:1540" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1556:1593" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1609:1642" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1659:1724" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1744:1788" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="1799:1868" ph="/** inject swagger doc into main object. ...*/" />
+                <marker date="1486759913935" expanded="true" signature="1908:2388" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="2000:2384" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="2390:2510" ph="/** Create the express instance an inject into main property the instance and server (http) ...*/" />
+                <marker date="1486759913935" expanded="true" signature="2546:2915" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="2628:2911" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="2662:2685" ph="/** Sessions ...*/" />
+                <marker date="1486759913935" expanded="true" signature="2917:3003" ph="/** create socket.io instance and inject into main object ...*/" />
+                <marker date="1486759913935" expanded="true" signature="3035:3591" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="3114:3587" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="3321:3550" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="3497:3544" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="3593:3765" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+                <marker date="1486759913935" expanded="true" signature="3766:3938" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+                <marker date="1486759913935" expanded="true" signature="3979:4391" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="4113:4387" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="4394:4498" ph="/** Socket.io emit message. Using into controllers/index.js for wrapHandler ...*/" />
+                <marker date="1486759913935" expanded="true" signature="4536:4832" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="4620:4828" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="4657:4780" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="4835:4924" ph="/** Create the common lib instances for all REST Application ...*/" />
+                <marker date="1486759913935" expanded="true" signature="4958:5195" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="5018:5191" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="5237:5453" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="5348:5449" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="5492:7352" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="5576:7348" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="5622:5665" ph="{&quot;controllers&quot;: self.main.controllers...}" />
+                <marker date="1486759913935" expanded="true" signature="5806:5973" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="5823:5938" ph="{&quot;code&quot;: 'validation_error'...}" />
+                <marker date="1486759913935" expanded="true" signature="6025:7184" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="6097:6687" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="6534:6629" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="6635:6668" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="6884:6945" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="6981:7122" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="7267:7342" ph="{...}" />
+                <marker date="1486759913935" expanded="true" signature="7315:7336" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -93,8 +145,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="83" column="54" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="54" />
+            <state relative-caret-position="1428">
+              <caret line="84" column="54" lean-forward="false" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -113,10 +165,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/controllers/paciente.js" />
         <option value="$PROJECT_DIR$/lib/paciente.js" />
         <option value="$PROJECT_DIR$/api/swagger/swagger.yaml" />
-        <option value="$PROJECT_DIR$/controllers/paciente.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -323,18 +375,18 @@
       <updated>1484667217993</updated>
       <workItem from="1484667219473" duration="7916000" />
       <workItem from="1486152763522" duration="1798000" />
-      <workItem from="1486758720374" duration="1132000" />
+      <workItem from="1486758720374" duration="2156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10846000" />
+    <option name="totallyTimeSpent" value="11870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.249375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.249375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -377,7 +429,9 @@
         <state relative-caret-position="612">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#211#562#1" expanded="false" />
+            <element signature="e#1931#2847#0" expanded="false" />
+            <element signature="e#1962#2465#0" expanded="false" />
+            <element signature="e#2470#2847#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -404,6 +458,57 @@
           <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1486759913935" expanded="true" signature="845:1797" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="901:1143" ph="{&quot;config&quot;: config...}" />
+            <marker date="1486759913935" expanded="true" signature="1148:1201" ph="/*...*/" />
+            <marker date="1486759913935" expanded="true" signature="1269:1793" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1306:1338" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1354:1382" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1387:1445" ph="//..." />
+            <marker date="1486759913935" expanded="true" signature="1460:1494" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1510:1540" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1556:1593" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1609:1642" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1659:1724" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1744:1788" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1799:1868" ph="/** inject swagger doc into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="1908:2388" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2000:2384" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2390:2510" ph="/** Create the express instance an inject into main property the instance and server (http) ...*/" />
+            <marker date="1486759913935" expanded="true" signature="2546:2915" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2628:2911" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2662:2685" ph="/** Sessions ...*/" />
+            <marker date="1486759913935" expanded="true" signature="2917:3003" ph="/** create socket.io instance and inject into main object ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3035:3591" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3114:3587" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3321:3550" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3497:3544" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3593:3765" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3766:3938" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3979:4391" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4113:4387" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4394:4498" ph="/** Socket.io emit message. Using into controllers/index.js for wrapHandler ...*/" />
+            <marker date="1486759913935" expanded="true" signature="4536:4832" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4620:4828" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4657:4780" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4835:4924" ph="/** Create the common lib instances for all REST Application ...*/" />
+            <marker date="1486759913935" expanded="true" signature="4958:5195" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5018:5191" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5237:5453" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5348:5449" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5492:7352" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5576:7348" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5622:5665" ph="{&quot;controllers&quot;: self.main.controllers...}" />
+            <marker date="1486759913935" expanded="true" signature="5806:5973" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5823:5938" ph="{&quot;code&quot;: 'validation_error'...}" />
+            <marker date="1486759913935" expanded="true" signature="6025:7184" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6097:6687" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6534:6629" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6635:6668" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6884:6945" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6981:7122" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="7267:7342" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="7315:7336" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -429,7 +534,9 @@
         <state relative-caret-position="612">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#211#562#1" expanded="false" />
+            <element signature="e#1931#2847#0" expanded="false" />
+            <element signature="e#1962#2465#0" expanded="false" />
+            <element signature="e#2470#2847#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -456,6 +563,57 @@
           <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1486759913935" expanded="true" signature="845:1797" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="901:1143" ph="{&quot;config&quot;: config...}" />
+            <marker date="1486759913935" expanded="true" signature="1148:1201" ph="/*...*/" />
+            <marker date="1486759913935" expanded="true" signature="1269:1793" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1306:1338" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1354:1382" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1387:1445" ph="//..." />
+            <marker date="1486759913935" expanded="true" signature="1460:1494" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1510:1540" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1556:1593" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1609:1642" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1659:1724" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1744:1788" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1799:1868" ph="/** inject swagger doc into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="1908:2388" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2000:2384" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2390:2510" ph="/** Create the express instance an inject into main property the instance and server (http) ...*/" />
+            <marker date="1486759913935" expanded="true" signature="2546:2915" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2628:2911" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2662:2685" ph="/** Sessions ...*/" />
+            <marker date="1486759913935" expanded="true" signature="2917:3003" ph="/** create socket.io instance and inject into main object ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3035:3591" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3114:3587" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3321:3550" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3497:3544" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3593:3765" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3766:3938" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3979:4391" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4113:4387" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4394:4498" ph="/** Socket.io emit message. Using into controllers/index.js for wrapHandler ...*/" />
+            <marker date="1486759913935" expanded="true" signature="4536:4832" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4620:4828" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4657:4780" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4835:4924" ph="/** Create the common lib instances for all REST Application ...*/" />
+            <marker date="1486759913935" expanded="true" signature="4958:5195" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5018:5191" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5237:5453" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5348:5449" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5492:7352" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5576:7348" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5622:5665" ph="{&quot;controllers&quot;: self.main.controllers...}" />
+            <marker date="1486759913935" expanded="true" signature="5806:5973" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5823:5938" ph="{&quot;code&quot;: 'validation_error'...}" />
+            <marker date="1486759913935" expanded="true" signature="6025:7184" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6097:6687" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6534:6629" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6635:6668" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6884:6945" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6981:7122" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="7267:7342" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="7315:7336" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -506,46 +664,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/paciente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+        <state relative-caret-position="3757">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1486759913935" expanded="true" signature="845:1797" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="901:1143" ph="{&quot;config&quot;: config...}" />
+            <marker date="1486759913935" expanded="true" signature="1148:1201" ph="/*...*/" />
+            <marker date="1486759913935" expanded="true" signature="1269:1793" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1306:1338" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1354:1382" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1387:1445" ph="//..." />
+            <marker date="1486759913935" expanded="true" signature="1460:1494" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1510:1540" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1556:1593" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1609:1642" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1659:1724" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1744:1788" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="1799:1868" ph="/** inject swagger doc into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="1908:2388" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2000:2384" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2390:2510" ph="/** Create the express instance an inject into main property the instance and server (http) ...*/" />
+            <marker date="1486759913935" expanded="true" signature="2546:2915" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2628:2911" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="2662:2685" ph="/** Sessions ...*/" />
+            <marker date="1486759913935" expanded="true" signature="2917:3003" ph="/** create socket.io instance and inject into main object ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3035:3591" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3114:3587" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3321:3550" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3497:3544" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="3593:3765" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3766:3938" ph="/** create redisClient or sentinel instance, use own redis lib (return sentinel instance or redisClient). Inject the instance into main object. ...*/" />
+            <marker date="1486759913935" expanded="true" signature="3979:4391" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4113:4387" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4394:4498" ph="/** Socket.io emit message. Using into controllers/index.js for wrapHandler ...*/" />
+            <marker date="1486759913935" expanded="true" signature="4536:4832" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4620:4828" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4657:4780" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="4835:4924" ph="/** Create the common lib instances for all REST Application ...*/" />
+            <marker date="1486759913935" expanded="true" signature="4958:5195" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5018:5191" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5237:5453" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5348:5449" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5492:7352" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5576:7348" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5622:5665" ph="{&quot;controllers&quot;: self.main.controllers...}" />
+            <marker date="1486759913935" expanded="true" signature="5806:5973" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="5823:5938" ph="{&quot;code&quot;: 'validation_error'...}" />
+            <marker date="1486759913935" expanded="true" signature="6025:7184" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6097:6687" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6534:6629" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6635:6668" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6884:6945" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="6981:7122" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="7267:7342" ph="{...}" />
+            <marker date="1486759913935" expanded="true" signature="7315:7336" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="54" lean-forward="false" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/swagger/swagger.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="e#211#562#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/paciente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="1428">
+          <caret line="84" column="54" lean-forward="false" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -553,8 +736,36 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/paciente.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/paciente.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-445">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/swagger/swagger.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+          <folding>
+            <element signature="e#1931#2847#0" expanded="false" />
+            <element signature="e#1962#2465#0" expanded="false" />
+            <element signature="e#2470#2847#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

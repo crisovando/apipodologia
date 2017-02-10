@@ -20,19 +20,7 @@ function Paciente(main) {
 									return next(err);
 								});
 		},
-<<<<<<< HEAD
-	'update':(req,res,next)=>{
-		let params = req.swagger.params.id ? req.swagger.params.id.value : null;
 
-		main.libs.paciente.update(params)
-			.then(busqueda =>{
-				res.json(busqueda);
-			})
-			.catch(err => {
-				 next(err);
-			});
-	}
-=======
     'find': (req, res, next)=> {
       debug(".paciente.find called");
 
@@ -48,8 +36,19 @@ function Paciente(main) {
                 .catch(err => {
                   return next(err);
                 });
+    },
+    'update':(req,res,next)=>{
+        let params = req.swagger.params.id ? req.swagger.params.id.value : null;
+
+        main.libs.paciente.update(params)
+            .then(busqueda =>{
+                res.json(busqueda);
+            })
+            .catch(err => {
+                next(err);
+            });
     }
->>>>>>> a2da2e23e5e079a8bb94de2b2b0b7741825b5dba
+
 	};
 }
 
