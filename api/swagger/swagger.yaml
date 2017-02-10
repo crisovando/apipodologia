@@ -23,54 +23,24 @@ paths:
           required: true
           schema:
               $ref: '#/definitions/paciente'
-    patch:
-      tags:
-         - currency
-     summary: Realiza un Update
-     x-swagger-router-controller: paciente.update
-     parameters:
-       - name: datos
-         in: body
-         required: true
-         schema:
-           $ref: '#/definitions/paciente'
-
-     responses:
-       '200':
-         description: Currency
-         schema:
-           $ref: '#/definitions/currency'
-
       responses:
         '200':
           description: devuelve las cuentas
-  /server/time:
-    get:
-      tags:
-        - hours
-      summary: the local server time
-      x-swagger-router-controller: server.time
-      responses:
-        '200':
-          description: the local server time answer
 
-  /about:
-    get:
+  /paciente/{id}:
+    patch:
       tags:
-        - about
-      summary: About this API
-      x-swagger-router-controller: about.about
+         - paciente
+      summary: Realiza un Update
+      x-swagger-router-controller: paciente.update
       parameters:
-        - name: name
-          in: query
-          required: false
-          type: string
+        - name: datos
+          in: path
+          required: true
+
       responses:
         '200':
-          description: About
-          schema:
-            $ref: '#/definitions/about'
-
+          description: Paciente
 
 definitions:
   about:
