@@ -1,7 +1,4 @@
-#!/usr/bin/env node
-
-/* eslint-disable semi */
-
+'use strict';
 var app = require('../app');
 var debug = require('debug')('farmasun:server');
 var config = require('config');
@@ -10,12 +7,11 @@ var http = require('http');
 new app(config)
     .then((main)=> {
         var server  =main.server;
-        var port = normalizePort(process.env.PORT || config.get('server.port'));
+        var port = normalizePort(process.env.PORT || 5000);
 
         /**
          * Normalize a port into a number, string, or false.
          */
-
         function normalizePort (val) {
             var port = parseInt(val, 10);
 
@@ -35,7 +31,6 @@ new app(config)
         /**
          * Event listener for HTTP server "error" event.
          */
-
         function onError (error, port) {
             if (error.syscall !== 'listen') {
                 throw error;
@@ -63,7 +58,6 @@ new app(config)
         /**
          * Event listener for HTTP server "listening" event.
          */
-
         function onListening (server) {
             var addr = server.address();
             var bind = typeof addr === 'string'

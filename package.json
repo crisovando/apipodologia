@@ -2,11 +2,11 @@
   "name": "apipodologia",
   "version": "1.0.0",
   "description": "api que maneja la logica de los pacientes",
-  "main": "app.js",
+  "main": "bin/www",
   "scripts": {
     "start": "nodemon bin/www",
-    "debug": "DEBUG=* node bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "DEBUG=* && node bin/www",
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/crisovando/apipodologia#readme",
   "dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
     "compression": "^1.6.2",
     "config": "^1.21.0",
     "express": "^4.14.0",
@@ -29,5 +31,10 @@
     "redis-sentinel": "^0.3.3",
     "socket.io": "^1.5.1",
     "swagger-tools": "^0.10.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0"
   }
 }

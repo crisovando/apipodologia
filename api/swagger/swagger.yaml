@@ -7,6 +7,7 @@ host: 'localhost:5000'
 basePath: /service/
 consumes:
   - application/json
+  - multipart/form-data
 produces:
   - application/json
 
@@ -42,11 +43,30 @@ paths:
       summary: Inserta datos del paciente
       x-swagger-router-controller: paciente.insert
       parameters:
-        - name: datos
-          in: body
+        - name: dni
+          in: formData
           required: true
-          schema:
-              $ref: '#/definitions/Paciente'
+          type: number
+        - name: nombre
+          in: formData
+          type: string
+          required: true
+        - name: apellido
+          in: formData
+          type: string
+          required: true
+        - name: domicilio
+          in: formData
+          type: string
+          required: true
+        - name: telefono
+          in: formData
+          type: number
+          required: false
+        - name: fotoPerfil
+          in: formData
+          type: file
+          required: false
       responses:
         '201':
           description: devuelve las cuentas
