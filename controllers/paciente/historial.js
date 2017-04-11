@@ -9,11 +9,24 @@ function Historial(main) {
 	return {
     'insert': (req, res, next)=> {
 			debug(".paciente.historial.insert called");
-			
+
       let id = req.swagger.params.id ? req.swagger.params.id.value : null;
       let parametros = req.swagger.params.datos ? req.swagger.params.datos.value : null;
 
       main.libs.paciente.insertHistorial(id,parametros)
+								.then(historial => {
+									res.json(historial);
+								})
+								.catch(err => {
+									return next(err);
+								});
+		},
+		'find': (req, res, next)=> {
+			debug(".paciente.historial.find called");
+
+      let id = req.swagger.params.id ? req.swagger.params.id.value : null;
+
+      main.libs.paciente.findHistorial(id)
 								.then(historial => {
 									res.json(historial);
 								})
