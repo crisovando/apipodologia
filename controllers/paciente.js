@@ -26,6 +26,7 @@ function Paciente(main) {
 									return next(err);
 								});
 		},
+
     'find': (req, res, next)=> {
       debug(".paciente.find called");
 
@@ -41,7 +42,19 @@ function Paciente(main) {
                 .catch(err => {
                   return next(err);
                 });
+    },
+    'update':(req,res,next)=>{
+        let params = req.swagger.params.id ? req.swagger.params.id.value : null;
+
+        main.libs.paciente.update(params)
+            .then(busqueda =>{
+                res.json(busqueda);
+            })
+            .catch(err => {
+                next(err);
+            });
     }
+
 	};
 }
 
