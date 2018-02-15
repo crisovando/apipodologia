@@ -1,5 +1,5 @@
 /* eslint-disable semi */
-"use strict";
+'use strict';
 
 const debug = require('debug')('restful:controllers:index');
 
@@ -15,34 +15,33 @@ const debug = require('debug')('restful:controllers:index');
  * @returns {Function} - the wrap function.
  */
 function wrapHandler(handler, announce) {
-	debug("wrapHandler called");
-	return (req, res, next) => {
-		try {
-			handler(req, res, (err) => {
-				if (err) {
-					debug(err);
+  debug('wrapHandler called');
+  return (req, res, next) => {
+    try {
+      handler(req, res, (err) => {
+        if (err) {
+          debug(err);
 
-					announce('farmasun:error', err.message ? err.message : err);
+          announce('podologia:error', err.message ? err.message : err);
 					// send 503 and error as string
-					res.status(503).json({
-						code: 'controller_error',
-						message: typeof(err) === 'string' ? err : err.message
-					}).end();
-				}
-				else {
-					next();
-				}
-			});
-		} catch (e) {
-			debug(e);
-			announce('farmasun:error', e.message ? e.message : err);
+          res.status(503).json({
+            code: 'controller_error',
+            message: typeof (err) === 'string' ? err : err.message
+          }).end();
+        } else {
+          next();
+        }
+      });
+    } catch (e) {
+      debug(e);
+      announce('podologia:error', e.message ? e.message : e);
 
-			res.status(503).json({
-				code: 'controller_error',
-				message: typeof(e) === 'string' ? e : e.message
-			}).end();
-		}
-	};
+      res.status(503).json({
+        code: 'controller_error',
+        message: typeof (e) === 'string' ? e : e.message
+      }).end();
+    }
+  };
 }
 
 
@@ -53,13 +52,13 @@ function wrapHandler(handler, announce) {
  * @returns {*}
  */
 function wrapControllers(controllers, announce) {
-	debug("wrapControllers called");
-	for (var k in controllers) {
-		debug("setting wrapHandler to: " + k);
-		controllers[k] = wrapHandler(controllers[k], announce);
-	}
+  debug('wrapControllers called');
+  for (var k in controllers) {
+    debug('setting wrapHandler to: ' + k);
+    controllers[k] = wrapHandler(controllers[k], announce);
+  }
 
-	return controllers;
+  return controllers;
 }
 
 
@@ -71,22 +70,20 @@ function wrapControllers(controllers, announce) {
 function makeControllers(main) {
 
 
-	debug("main function called");
+  debug('main function called');
 
-	let controllers = {
-		'server': require('./server')(main),
+  let controllers = {
     'paciente': require('./paciente')(main),
-		'paciente_historial': require('./paciente/historial')(main)
-	};
+    'paciente_historial': require('./paciente/historial')(main)
+  };
 
 
-	return wrapControllers({
-		'server.time_get': controllers.server.time,
+  return wrapControllers({
     'paciente.insert_post': controllers.paciente.insert,
-		'paciente.find_get': controllers.paciente.find,
-		'paciente.historial.insert_post': controllers.paciente_historial.insert,
-		'paciente.historial.find_get': controllers.paciente_historial.find
-	}, main.announce);
+    'paciente.find_get': controllers.paciente.find,
+    'paciente.historial.insert_post': controllers.paciente_historial.insert,
+    'paciente.historial.find_get': controllers.paciente_historial.find
+  }, main.announce);
 }
 
 

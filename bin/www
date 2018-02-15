@@ -1,6 +1,6 @@
 'use strict';
 var app = require('../app');
-var debug = require('debug')('farmasun:server');
+var debug = require('debug')('podologia:server');
 var config = require('config');
 var http = require('http');
 
