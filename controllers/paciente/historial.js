@@ -33,6 +33,21 @@ function Historial(main) {
 								.catch(err => {
 									return next(err);
 								});
+		},
+
+		'remove': (req, res, next)=> {
+			debug(".paciente.historial.remove called");
+
+			const id = req.swagger.params.id ? req.swagger.params.id.value : null;
+			const historialId = req.swagger.params.historialId ? req.swagger.params.historialId.value : null;
+
+      main.libs.paciente.removeHistorial(id, historialId)
+								.then(historial => {
+									res.json(historial);
+								})
+								.catch(err => {
+									return next(err);
+								});
 		}
 	};
 }

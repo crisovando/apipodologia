@@ -120,7 +120,26 @@ paths:
       responses:
         '200':
           description: devuelve el historial del paciente
-
+  /pacientes/{id}/historial/{historialId}:
+    delete:
+      tags:
+        - Pacientes
+      summary: Elimina registro del historial del paciente
+      x-swagger-router-controller: paciente.historial.remove
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: id del paciente
+          required: true
+        - name: historialId
+          in: path
+          type: string
+          required: true
+          description: id del registro del historial
+      responses:
+        '201':
+          description: devuelve ok
 definitions:
   Paciente:
     type: object

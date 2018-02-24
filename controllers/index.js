@@ -82,7 +82,8 @@ function makeControllers(main) {
     'paciente.insert_post': controllers.paciente.insert,
     'paciente.find_get': controllers.paciente.find,
     'paciente.historial.insert_post': controllers.paciente_historial.insert,
-    'paciente.historial.find_get': controllers.paciente_historial.find
+    'paciente.historial.find_get': controllers.paciente_historial.find,
+    'paciente.historial.remove_delete': controllers.paciente_historial.remove
   }, main.announce);
 }
 
