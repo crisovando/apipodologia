@@ -43,30 +43,11 @@ paths:
       summary: Inserta datos del paciente
       x-swagger-router-controller: paciente.insert
       parameters:
-        - name: dni
-          in: formData
+        - name: datos
+          in: body
           required: true
-          type: number
-        - name: nombre
-          in: formData
-          type: string
-          required: true
-        - name: apellido
-          in: formData
-          type: string
-          required: true
-        - name: domicilio
-          in: formData
-          type: string
-          required: true
-        - name: telefono
-          in: formData
-          type: number
-          required: false
-        - name: fotoPerfil
-          in: formData
-          type: file
-          required: false
+          schema:
+              $ref: '#/definitions/Paciente'
       responses:
         '201':
           description: devuelve las cuentas
@@ -140,6 +121,30 @@ paths:
       responses:
         '201':
           description: devuelve ok
+    patch:
+      tags:
+        - Pacientes
+      summary: Actualiza datos del historial del paciente
+      x-swagger-router-controller: paciente.historial.update
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: id del paciente
+          required: true
+        - name: historialId
+          in: path
+          type: string
+          required: true
+          description: id del registro del historial
+        - name: notaClinica
+          in: body
+          required: true
+          schema:
+              $ref: '#/definitions/Historial'
+      responses:
+        '201':
+          description: devuelve las cuentas
 definitions:
   Paciente:
     type: object
@@ -150,12 +155,74 @@ definitions:
         type: string
       apellido:
         type: string
+      edad:
+        type: number
+      fecNacimiento:
+        type: string
+        pattern: '^\d{2}/\d{2}/\d{4}$'
+      primeraVisita:
+        type: string
+        pattern: '^\d{2}/\d{2}/\d{4}$'
       domicilio:
         type: string
-      telefono:
-        type: number
-      mail:
+      barrio:
         type: string
+      telefono:
+        type: string
+      celular:
+        type: string
+      ocupacion:
+        type: string
+      alergia:
+        type: string
+      presion:
+        type: string
+      estatura:
+        type: number
+      peso:
+        type: number
+      tipoCalzado:
+        type: number
+      calzadoNro:
+        type: number
+      tacon:
+        type: string
+      varisa:
+        type: string
+      valguisa:
+        type: string
+      pedigrafia:
+        type: string
+      podoscopio:
+        type: string
+      normal:
+        type: boolean
+      plano:
+        type: boolean
+      cavo:
+        type: boolean
+      varo:
+        type: boolean
+      pronador:
+        type: boolean
+      supinador:
+        type: boolean
+      cuadrado:
+        type: boolean
+      griego:
+        type: boolean
+      egipcio:
+        type: boolean
+      lesionesPiel:
+        type: string
+      garra:
+        type: boolean
+      martillo:
+        type: boolean
+      maza:
+        type: boolean
+      halluxValgus:
+        type: boolean
   Historial:
     type: object
     properties:

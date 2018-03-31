@@ -48,6 +48,21 @@ function Historial(main) {
 								.catch(err => {
 									return next(err);
 								});
+		},
+
+		'update': (req, res, next)=> {
+			debug(".paciente.historial.update called");
+
+			const historialId = req.swagger.params.historialId ? req.swagger.params.historialId.value : null;
+			const notaClinica = req.swagger.params.notaClinica ? req.swagger.params.notaClinica.value : null;
+
+      main.libs.paciente.updateHistorial(notaClinica, historialId)
+								.then(historial => {
+									res.json(historial);
+								})
+								.catch(err => {
+									return next(err);
+								});
 		}
 	};
 }

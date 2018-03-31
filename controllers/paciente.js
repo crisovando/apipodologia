@@ -9,15 +9,7 @@ function Paciente(main) {
     'insert': (req, res, next) => {
       debug('.paciente.insert called');
 
-      let parametros = {
-        dni: req.swagger.params.dni ? req.swagger.params.dni.value : null,
-        nombre: req.swagger.params.nombre ? req.swagger.params.nombre.value : null,
-        apellido: req.swagger.params.apellido ? req.swagger.params.apellido.value : null,
-        domicilio: req.swagger.params.domicilio ? req.swagger.params.domicilio.value : null,
-        telefono: req.swagger.params.telefono ? req.swagger.params.telefono.value : null,
-        fotoPerfil: req.swagger.params.fotoPerfil ? req.swagger.params.fotoPerfil.value : null,
-        email: req.swagger.params.email ? req.swagger.params.email.value : null
-      };
+      let parametros = req.swagger.params.datos ? req.swagger.params.datos.value : null
 
       main.libs.paciente.insert(parametros)
         .then(paciente => {
