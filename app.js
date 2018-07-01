@@ -31,7 +31,6 @@ function app(config) {
 	var self = this;
 	debug("init....");
 
-
 	self.main = {
 		config: config,
 		db: mongojs(process.env.MONGOLAB_URI || config.get('db.host'), config.get('db.collections')),
